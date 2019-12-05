@@ -10,10 +10,12 @@
   <app-post
     *ngFor="let postItem of posts"
     [post]="postItem">
-    <small
-      *ngIf="postItem.text.length > 10; else short">Big post</small>
-    <ng-template #short>
-      <small>Small post</small>
-    </ng-template>
+    <div #info>
+      <small
+        *ngIf="postItem.text.length > 10; else short">Big post</small>
+      <ng-template #short>
+        <small>Small post</small>
+      </ng-template>
+    </div>
   </app-post>
 </div>
