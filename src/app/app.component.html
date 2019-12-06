@@ -1,24 +1,3 @@
 <div class="container">
-  <h1>Angular Components</h1>
-
-  <h2>Sub header</h2>
-
-  <app-post-form
-    (postChange)="updatePosts($event)"
-  ></app-post-form>
-
-  <hr />
-
-  <app-post
-    *ngFor="let postItem of posts"
-    [post]="postItem"
-    (removePostByID)="removePost($event)">
-    <div #info>
-      <small
-        *ngIf="postItem.text.length > 10; else short">Big post</small>
-      <ng-template #short>
-        <small>Small post</small>
-      </ng-template>
-    </div>
-  </app-post>
+  <h1>Angular directives</h1>
 </div>
