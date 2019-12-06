@@ -1,6 +1,8 @@
 <div class="container">
   <h1>Angular Components</h1>
 
+  <h2>Sub header</h2>
+
   <app-post-form
     (postChange)="updatePosts($event)"
   ></app-post-form>
@@ -9,7 +11,8 @@
 
   <app-post
     *ngFor="let postItem of posts"
-    [post]="postItem">
+    [post]="postItem"
+    (removePostByID)="removePost($event)">
     <div #info>
       <small
         *ngIf="postItem.text.length > 10; else short">Big post</small>
