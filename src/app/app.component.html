@@ -1,31 +1,9 @@
 <div class="container">
   <h1>Angular directives</h1>
 
-  <button
-    class="btn"
-    (click)="searchField = 'title'"
-  >Title</button>
-  <button
-    class="btn"
-    (click)="searchField = 'text'"
-  >Text</button>
+  <p>Wait for it... {{promise | async}}</p>
 
-  <hr>
+  <p>Date: {{date$ | async | date : 'HH:mm:ss'}}</p>
 
-  <button
-    class="btn"
-    (click)="addPost()"
-  >Add new post</button>
-
-  <input
-    [(ngModel)]="search"
-  >
-
-  <div
-    class="card"
-    *ngFor="let post of posts | filter : search : searchField"
-  >
-    <h2>{{post.title}}</h2>
-    <div>{{post.text}}</div>
-  </div>
+  <!--<p>{{dateInfo | date : 'HH:mm:ss'}}</p>-->
 </div>
