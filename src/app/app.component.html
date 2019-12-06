@@ -1,3 +1,49 @@
 <div class="container">
   <h1>Angular directives</h1>
+  <p
+    [appStyle]="'green'"
+    [dStyles]="{
+      border: '1px solid green',
+      borderRadius: '5px'
+    }"
+  >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ullam!</p>
+  <p
+    [appStyle]="'brown'"
+    [dStyles]="{
+      border: '1px solid brown',
+      borderRadius: '15px'
+    }"
+  >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ullam!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ullam!</p>
+
+  <button
+    class="btn"
+    (click)="isVisible = !isVisible"
+  >Toggle</button>
+
+  <!--<div-->
+    <!--*ngIf="isVisible"-->
+    <!--class="wrap"-->
+  <!--&gt;-->
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus exercitationem itaque necessitatibus odio officiis placeat quae recusandae tempore ut.</p>-->
+  <!--</div>-->
+
+  <!--<ng-template [ngIf]="isVisible">-->
+    <!--<div class="wrap">-->
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus exercitationem itaque necessitatibus odio officiis placeat quae recusandae tempore ut.</p>-->
+    <!--</div>-->
+  <!--</ng-template>-->
+
+  <!--<div-->
+    <!--*appIfNot="!isVisible"-->
+    <!--class="wrap"-->
+  <!--&gt;-->
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus exercitationem itaque necessitatibus odio officiis placeat quae recusandae tempore ut.</p>-->
+  <!--</div>-->
+
+  <ng-template [appIfNot]="!isVisible">
+    <div class="wrap">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus exercitationem itaque necessitatibus odio officiis placeat quae recusandae tempore ut.</p>
+    </div>
+  </ng-template>
 </div>

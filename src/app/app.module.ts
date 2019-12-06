@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import {StyleDirective} from './directives/style.directive';
+import { IfNotDirective } from './directives/if-not.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StyleDirective,
+    IfNotDirective
   ],
   imports: [
     BrowserModule,
