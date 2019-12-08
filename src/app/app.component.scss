@@ -1,15 +1,13 @@
-.black {
-  background: black;
-  color: white;
-  font-weight: bold;
-}
-
-.green {
-  background: green;
-  color: white;
-  font-size: 1.5rem;
-}
-
 p {
   font-size: 1.5rem;
+}
+
+input {
+  &.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+
+  &.ng-valid.ng-touched {
+    border: 1px solid green;
+  }
 }
