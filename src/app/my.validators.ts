@@ -1,5 +1,5 @@
 import {FormControl} from '@angular/forms';
-import {Observable} from "rxjs/index";
+import {Observable} from 'rxjs/index';
 
 export class MyValidators {
   static forbiddenEmails(
