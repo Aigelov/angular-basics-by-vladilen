@@ -3,12 +3,10 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { SwitchComponent } from './switch/switch.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SwitchComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
